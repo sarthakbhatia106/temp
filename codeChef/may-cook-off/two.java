@@ -17,8 +17,8 @@ public class two {
 
             int days = 0;
             for (int i = 10; i >g; i--) {
-                sum += arr[i]/p;
-                arr[i-1]=arr[i]%p;
+                days += arr[i]/p;
+                arr[i-1]+=arr[i]%p;
             }
             System.out.println((days+1)+" "+(days+(arr[g]+p-1)/p));
 

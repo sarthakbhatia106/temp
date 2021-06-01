@@ -13,7 +13,7 @@
         color: green;
       }
       .c{
-        color: blue;
+        color: blue;  
       }
     </style>
   </head>
@@ -49,15 +49,15 @@
         if(divs[i].innerText==""){
           continue;
         }else{
-          if(divs[i].innerText.trim()=='a'){
+          if(divs[i].innerText.trim().split("\n")[0]=='a'){
             divs[i].classList.add("a");
           }
 
-          if(divs[i].innerText.trim()=='b'){
+          if(divs[i].innerText.trim().split("\n")[0]=='b'){
             divs[i].classList.add("b");
           }
 
-          if(divs[i].innerText.trim()=='c'){
+          if(divs[i].innerText.trim().split("\n")[0]=='c'){
             divs[i].classList.add("c");
           }
         }
